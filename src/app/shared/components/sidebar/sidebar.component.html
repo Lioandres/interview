@@ -5,8 +5,9 @@
     <hr>
 
     <div class="list-group list-reset">
-        <button class="list-group-item list-group-item-action">
-            Valorant
+        <button *ngFor="let item of tagHistory" class="list-group-item list-group-item-action"
+        (click)="showGifTag(item)">
+            {{item | titlecase}}
         </button>
 
     </div>

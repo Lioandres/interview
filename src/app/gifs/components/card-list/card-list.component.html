@@ -1,14 +1,12 @@
 <div class="row">
-    <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-center mt-2">
-            <div class="card-body text-white">
-                <div class="card-text">
-                    <p>Hola Mundo</p>
-                </div>
 
-            </div>
-        </div>
+    
+
+    <gifs-card *ngFor="let gif of gifsInput" [gifsAliasCard]="gif"  class="col-md-3 col-sm-6">
+    </gifs-card>
 
 
-    </div>
+    
+
 </div>
+

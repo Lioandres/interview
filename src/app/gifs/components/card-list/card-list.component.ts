@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Gifs } from '../../Interfaces/SearchResponse.interface';
 
 @Component({
   selector: 'gifs-card-list',
@@ -11,5 +12,7 @@ export class CardListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input('gifsAlias')  gifsInput:Gifs[]=[]
 
 }
